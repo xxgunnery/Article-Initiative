@@ -1,0 +1,115 @@
+.applicationsContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include marginCenter(80%);
+    .applicationsHeader {
+        font-size: 40px;
+        margin: 20px 0px 10px 0px;
+        text-align: center;
+        font-weight: 800;
+    }
+    .applicationsInstructions {
+        text-align: center;
+        @include marginCenter(80%);
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .flexRows {
+        flex-wrap: wrap;
+        .applicationsCard {
+            div {
+                @include marginCenter(99%);
+                background-color: $fancywhite;
+                border-radius: 8px;
+                text-align: center;
+                min-height: 300px;
+                border: 9px solid black;
+                padding: 5px 0px 5px 0px;
+                margin: 10px 0px 10px 0px;
+                h3 {
+                    margin-bottom: 0px;
+                    padding: 0;
+                    margin-top: 0;
+                }
+                h2 {
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    font-weight: 800;
+                    @include marginCenter(90%);
+                }
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    @include marginCenter(90%);
+                    font-size: 20px;
+                } a {
+                    display: block;
+                    text-align: center;
+                    @include marginCenter(40%);
+                    font-size: 25px;
+                    font-weight: 800;
+                    padding: 6px;
+                    border-radius: 3px;
+                    color: white;
+                    background-color: $primary-color-blue;
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: rgba($primary-color-blue,.7);
+                    }
+                }
+            }   
+        }
+    }
+}
+@media only screen and (max-width: $sm) {
+    .applicationsContainer {
+        @include marginCenter(100%);
+        .applicationsHeader {
+            font-size: 25px;
+            margin: 10px 0px 10px 0px;
+        }
+        .applicationsInstructions {
+            @include marginCenter(100%);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .flexRows {
+            .applicationsCard {
+                div {
+                    border-radius: 5px;
+                    min-height: 300px;
+                    border: 5px solid black;
+                    h3 {
+                        font-size: 16px;
+
+                    }
+                    h2 {
+                        font-size: 18px;
+                        margin-top: 10px;
+                        @include marginCenter(95%);
+                    }
+                    img {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        width: 250px; height: auto;
+                    }
+                    p {
+                        @include marginCenter(99%);
+                        font-size: 16px;
+                    } a {
+                        @include marginCenter(70%);
+                        font-size: 18px;
+                        &:hover {
+                            background-color: rgba($primary-color-blue,.7);
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}

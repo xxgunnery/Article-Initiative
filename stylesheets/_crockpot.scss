@@ -1,0 +1,135 @@
+.crockpotContainer {
+    .crockpotForm {
+        border-radius: 5px;
+        background-color: white;
+        margin: 20px 0px 20px 0px;
+        padding: 20px 30px 20px 30px;
+        .crockpotFormHeader {
+            margin: 0px 0px 20px 0px;
+            padding: 0;
+            color: black;
+            font-size: 25px;
+            font-weight: 800;
+            text-align: center;
+        }
+        .crockpotFormCheckbox {
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+            margin-top: -1px;
+            margin-bottom: -1px;
+            border-left: 2px solid rgba(black,.2);
+            border-right: 2px solid rgba(black,.2);
+            margin-right: -1px;
+            margin-left: -1px;
+            display: flex;
+            padding: 6px 9px 6px 9px;
+            border-collapse: collapse;
+            min-height: 70px;
+            p {
+                font-size: 18px;
+                width: 95%;
+                margin: 0;
+            }
+            input {
+                width: 15px;
+                margin-top: 4px;
+            }
+        }
+        .crockpotFormSubmit {
+            button {
+                color: white;
+                padding: 5px;
+                font-size: 22px;
+                text-align: center;
+                background-color: $primary-color-blue;
+                @include marginCenter(20%);
+                border: none;
+                margin-top: 20px;
+            }
+        }
+
+    }
+    .crockpotList {
+        border-radius: 5px;
+        background-color: white;
+        margin: 20px 0px 20px 0px;
+        padding: 20px 30px 20px 30px;
+        .crockpotListHeader {
+            color: black;
+            font-weight: 800;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+        }
+        .crockpotListCategory {
+            border-bottom: 2px solid black;
+            margin-left: 20px;
+            font-size: 23px;
+            .crockpotListGroceries {
+                li {
+                    font-size: 18px;
+                    padding: 4px 0px 4px 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $lg) {
+    .crockpotContainer {
+        .crockpotForm {
+            .crockpotFormSubmit {
+                button {
+                    @include marginCenter(50%);
+                    margin-top: 20px;
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (max-width: $sm) {
+    .crockpotContainer {
+        .crockpotForm {
+            border-radius: 5px;
+            background-color: white;
+            margin: 10px 0px 10px 0px;
+            padding: 5px 6px 5px 6px;
+            .crockpotFormHeader {
+                margin: 0px 0px 10px 0px;
+                font-size: 16px;
+            }
+            .crockpotFormCheckbox {
+                min-height: 20px;
+                p {
+                    font-size: 14px;
+                }
+            }
+            .crockpotFormSubmit {
+                button {
+                    font-size: 20px;
+                    @include marginCenter(100%);
+                }
+            }
+        }
+        .crockpotList {
+            margin: 20px 0px 20px 0px;
+            padding: 5px 6px 6px 6px;
+            .crockpotListHeader {
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+            }
+            .crockpotListCategory {
+                border-bottom: 2px solid black;
+                margin-left: 0px;
+                font-size: 16px;
+                .crockpotListGroceries {
+                    li {
+                        font-size: 14px;
+                        padding: 4px 0px 4px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

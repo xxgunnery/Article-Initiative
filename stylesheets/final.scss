@@ -1,0 +1,61 @@
+$primary-color-orange: #ef6c00;
+$secondary-color-orange: #FF9800;
+$primary-color-blue: #0a02a1;
+$transparent-black: rgba(0,0,0,.85);
+$transparent-black2:rgba(0,0,0,.6);
+$grey-background1: #424242;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$form-color: rgba(white,.6);
+$form-highlight: #2196F3;
+$educationqa:#FBC02D;
+$fancywhite: #E0E0E0;
+$everywhere_grey: #757575;
+
+
+@mixin marginDestroy($marginvalue) {
+    margin-left: $marginvalue;
+    margin-right: $marginvalue;
+}
+@mixin imageSize($widthvalue) {
+    width: $widthvalue;
+    height: auto;
+}
+@mixin marginCenter($percentwidth) {
+    width: $percentwidth;
+    margin-left: (100%-$percentwidth)/2;
+    margin-right: (100%-$percentwidth)/2;
+}
+.mainContainer {
+    margin-top: 92px;
+}
+.bootstrapPaddingDestroy {
+    padding: 0;
+}
+body {
+    font-family: Oxygen;
+    background-color: white;
+    position: relative;
+}
+.flexRows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexColumns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boldText {
+    font-weight: 800;
+}
+@import 'nav';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'applications';
+@import 'application';
+@import 'crockpot';

@@ -1,0 +1,44 @@
+.aboutContainer {
+    margin-bottom: 60px;
+    .aboutHeader {
+        font-size: 40px;
+        color: black;
+        font-weight: 800;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        @include marginCenter(90%);
+    }
+    .aboutContent {
+        .aboutText {
+            @include marginCenter(90%);
+            h2 {
+                font-size: 25px;
+                font-weight: 800;
+                margin: 10px 0px 20px 0px;
+            }
+            p {
+                font-size: 22px;
+            }
+        }
+        .aboutCalltoaction {
+            padding: 20px;
+            font-size: 35px;
+            font-weight: 800;
+            background-color: $primary-color-blue;
+            color: white;
+            border-radius: 8px;
+            margin: 40px 0px 40px 0px;
+            text-decoration: none;
+            &:hover {
+                background-color: rgba($primary-color-blue,.8);
+                box-shadow: 5px 5px 0px black;
+            }
+        }
+        img {
+            width: 30%; 
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+http://newleafwellness.biz/2015/11/16/25-crockpot-freezer-meals-with-five-ingredients-or-less/
+
+PSEUDO CODE FOR CROCK POT MEAL SHOPPING LIST GENERATOR
+
+Goal: Create an app to allow a user to select various crockpot meals out of 25 featured in the article above and output a categorized list of ingredients to shop for.
+
+Approach 1: Generate multi-level arrays of {category,ingredient} for each meal. If the meal is selected, show the ingredients in the shopping list area where the category of the ingredient is equal to the category named.
+
+//Declarations
+Generate variables for ingredient type (chicken, chuck roast, butter)
+Generate multi-level arrays for each meal {Category, Number, Unit, Ingredient}
+Generate a checkbox for all recipes
+
+//Handle checkbox
+If a checkbox is selected
+    Generate shopping list frame (names of categories)
+    For each of the recipes (one at a time)
+        For each ingredient in the recipe (one at a time)
+            Add the number of the ingredient to the number defined earlier
+            
+            //Display the ingredients for the recipe in their category
+            If the ingredient is not new
+                Target the area where an HTML element has the same text of the category name
+                Generate HTML in that location combining Number - Unit - Ingredient (2 Cups Butter)
+            Else
+                Update the number
+                Replace old HTMl with new
+        End For
+    End For
+Else 
+    Display instructions
+
+
+

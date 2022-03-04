@@ -1,0 +1,51 @@
+.navbar {
+    margin: 0;
+}
+.mainNav {
+    background-color: white;
+    border-bottom: 2px solid black;
+    .navbar-toggle {
+        background-color: white!important;
+        border: 2px solid black!important;
+        margin-top: 26px;
+        .icon-bar {
+            background-color: black!important;
+        }
+    }
+    .navLogo {
+        margin-top: 10px;
+        height: 70px;
+        width: auto;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .navbar-nav {
+        li {
+            a {
+                font-size: 20px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                color: black;
+                font-weight: 800;
+                img {
+                    height: 8px;
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+}
+.mainFooter {
+    border-top: 2px solid black;
+    .navbar-nav {
+        li {
+            a {
+                font-size: 18px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                color: black;
+                font-weight: 800;
+            }
+        }
+    }
+}

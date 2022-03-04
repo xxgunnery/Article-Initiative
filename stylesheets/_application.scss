@@ -1,0 +1,95 @@
+//Default Application Styling, check out "appname.scss" for the app-specific styling.
+.applicationContainer {
+    margin-top: 20px;
+    background-color: $fancywhite;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include marginCenter(80%);
+    border-radius: 15px;
+    form {
+        @include marginCenter(40%);
+    }
+    .applicationHeader {
+        font-size: 30px;
+        margin: 20px 0px 10px 0px;
+        text-align: center;
+        font-weight: 800;
+    }
+    .applicationOverview {
+        font-size: 18px;
+        margin-bottom: 20px;
+        background-color: rgba(white,.3);
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 8px;
+        @include marginCenter(95%);
+        p {
+            text-align: center;
+            margin-top: 0px;
+            padding: 0;
+        }
+        ul {
+            margin: 0;
+            padding-left: 0;
+            font-weight: 800;
+            padding: 0px 0px 0px 20px;
+            li {
+                margin-left: 40px;
+                font-weight: normal;
+            }
+        }
+
+    }
+    .applicationOriginalarticle {
+        display: block;
+        text-align: center;
+        @include marginCenter(20%);
+        font-size: 25px;
+        font-weight: 800;
+        padding: 6px;
+        border-radius: 3px;
+        color: white;
+        background-color: $primary-color-blue;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        &:hover {
+            background-color: rgba($primary-color-blue,.7);
+        }
+     }
+}
+@media only screen and (max-width: $lg) {
+    .applicationContainer {
+        .applicationOriginalarticle {
+            @include marginCenter(50%);
+        }
+    }
+}
+@media only screen and (max-width: $sm) {
+    .applicationContainer {
+        @include marginCenter(95%);
+        border-radius: 10px;
+        .applicationHeader {
+            font-size: 20px;
+            margin: 10px 0px 10px 0px;
+        }
+        .applicationOverview {
+            font-size: 15px;
+            @include marginCenter(95%);
+            ul {
+                margin: 0;
+                font-weight: 800;
+                padding: 0px 0px 0px 10px;
+                li {
+                    margin-left: 30px;
+                    font-weight: normal;
+                }
+            }
+
+        }
+        .applicationOriginalarticle {
+            @include marginCenter(95%);
+            font-size: 20px;
+        }
+    }
+}
